@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+/* Make it a marquee */
+.marquee {
+    width: 450px;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 50s linear infinite;
+}
+
+.marquee:hover {
+    animation-play-state: paused
+}
+
+/* Make it move */
+@keyframes marquee {
+    0%   { text-indent: 27.5em }
+    100% { text-indent: -105em }
+}
+    video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+header {
+	
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+	padding: 0.5em;
+}
+.form{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.search-bar{
+    width:100%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.2);
+    display:flex;
+    align-items: center;
+    border-radius: 60px;
+    padding:10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding:24px 20px;
+    font-size: 20px;
+    color:#cac7ff;
+
+}
+::placeholder{
+    color:#cac7ff;
+
+}
+.search-bar button img{
+    width: 25%;
+}
+.search-bar button{
+    border:0;
+    border-radius: 50px;
+    width:60px;
+    height: 60px;
+    background: #58629b;
+    cursor: pointer;
+}
+nav a {
+    color: inherit;
+    padding: 0 12px;
+    text-decoration: none;
+}
+.overlay {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay h2 {
+    background: #000 none repeat scroll 0 0;
+    color: tan;
+    font-weight: 600;
+    margin: 2rem 3rem 0;
+    mix-blend-mode: overlay;
+    padding: 5px 15px;
+    text-align: center;
+}
+/* Style for the container */
+.intro {
+    display: flex; /* Use flexbox to arrange elements in a row */
+    align-items: center; /* Align items vertically in the center */
+}
+
+/* Style for the image */
+.intro img {
+    max-width: 100px; /* Adjust the width of the image as needed */
+    height: 100px; /* Maintain aspect ratio */
+}
+
+/* Style for the text content */
+.intro .text-content {
+    margin-left: 20px; /* Add some spacing between the image and text */
+}
+
+/* Additional styles for heading and paragraph */
+.intro .text-content h2 {
+    font-size: 24px; /* Adjust font size as needed */
+    margin: 0; /* Remove margin for the heading */
+}
+
+.intro .text-content p {
+    font-size: 16px; /* Adjust font size as needed */
+}
+.Conferences {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 80px;
+  background-color: #1A385A;
+}
+
+.Conferences.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.Conferences .work i {
+  width: fit-content;
+  font-size: 50px;
+  color: #333333;
+  border-radius: 50%;
+  border: 2px solid #333333;
+  padding: 12px;}
+
+  .Conferences .work img {
+  width: fit-content;
+  border-radius: 0%;
+  border: 2px;
+  padding: 12px;
+  height: 200px;
+  width: 200px;
+}
+
+.Conferences .work .work-heading {
+  font-size: 20px;
+  color: #f4f3f3;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.Conferences .work .work-text {
+  font-size: 15px;
+  color: #fcfafa;
+  margin: 10px 0;
+}
+
+.Explore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 80px;
+  border-top: 2px solid #eeeeee;
+  background-color:#769ABE;
+}
+/* CSS for footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #302f49;
+    padding: 40px 80px;
+  }
+  
+  .bottom-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+  }
+  
+  .bottom-links .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+  }
+  
+  .bottom-links .links span {
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 10px 0;
+  }
+  
+  .bottom-links .links a {
+    text-decoration: none;
+    color: #a1a1a1;
+    padding: 10px 20px;
+  }
+  .copy {
+    color: #fff;
+    position: relative;
+    background-color:#6E5E5E;
+  }
+  
