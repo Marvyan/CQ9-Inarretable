@@ -6,9 +6,9 @@ body{
 }
 .bg{
  
-  background-color: #253746;
+  background-image: url(images/elephates.png);
   height:100px;
-  min-height: 150px;
+  min-height: 250px;
   /* Needed to position the navbar */
   position: relative;
 }
@@ -77,42 +77,29 @@ nav a:hover{
   text-transform: uppercase;
 }
 .space{
-  height: 70px;
+    height:100px;
+    min-height: 250px;
+    background-color: #B9DCD2;
+    display: flex;
 }
-.second-navbar{
-  width: 100%;
-  overflow: auto;
+.image{
+    padding:30px 5px;
 }
-.second-navbar ul{
-  
-  padding:0;
-  margin:0;
-  list-style: none;
-  background-color: #D9D9D9;
-  padding: 2px;
-}
-.second-navbar li{
-  float:left;
- 
-  margin: 2px;
-}
-.second-navbar a{
-  width:100px;
-  text-decoration: none;
-  display: flex;
-  padding:4px 5px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  text-align: center;
-  font-weight: bold;
-  font-size: 12px;
-  display:flex;
-  justify-content: center;
-  position: sticky;
-  top:0;
-  cursor: pointer;
+.text{
+padding:20px;
 
-      }
+}
+.text h1{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text.p{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+      
 /* Style for the main container */
 .main-container {
   display: flex; /* Use flexbox to arrange child divs side by side */
