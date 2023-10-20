@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
-/* Make it a marquee */
 
 body{
-  margin: 0;
+  margin:0;
   padding: 0;
-  
 }
-.bg-img {
+.bg{
  
   background-color: #253746;
   height:100px;
@@ -14,39 +12,60 @@ body{
   /* Needed to position the navbar */
   position: relative;
 }
-nav{
+
+  .main-container {
+    display: flex; /* Use flexbox to arrange child divs side by side */
+    height: 1500px;
+    flex-direction: column; /* Stack child divs vertically */
+  }
+  
+  /* Style for the left div */
+
+
+.navbar{
   width: 100%;
   overflow: auto;
+  
 }
-ul{
+.navbar ul{
+  
   padding:0;
   margin:0 0 0 150px;
   list-style: none;
-}
-li{
-  float:left;
-}
-nav a{
-    width:70px;
-    display: flex;
-    padding:60px 10px;
+  background-color: #D9D9D9;
+  padding: 2px;
   
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    background-color: #D9D9D9;
-    text-align: center;
-    font-size: 12px;
-    justify-content: space-around;
+}
+.navbar li{
+  float:left;
+  margin: 0.5px;
+ 
+}
+.navbar a{
+  width:100px;
+  display: flex;
+  padding:40px 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-align: center;
+  font-size: 12px;
+  display:flex;
+  justify-content: center;
+  position: sticky;
+  font-weight: bold;
+  text-decoration: none;
+  top:0;
+  cursor: pointer;
+
       }
 
 .logo img{
+  
   position: absolute;
   border-radius: 50%;
-  /*margin-top: 15px;*/
-  /*margin-left: 10px;*/
   width: 80px;
   height: 80px;
- padding: 15px;
+  padding: 15px;
   display: inline;
   left: 0;
   margin: 5px 10px 10px 50px;
@@ -57,6 +76,43 @@ nav a:hover{
   transition: 0.5;
   text-transform: uppercase;
 }
+.space{
+  height: 70px;
+}
+.second-navbar{
+  width: 100%;
+  overflow: auto;
+}
+.second-navbar ul{
+  
+  padding:0;
+  margin:0;
+  list-style: none;
+  background-color: #D9D9D9;
+  padding: 2px;
+}
+.second-navbar li{
+  float:left;
+ 
+  margin: 2px;
+}
+.second-navbar a{
+  width:100px;
+  text-decoration: none;
+  display: flex;
+  padding:4px 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  display:flex;
+  justify-content: center;
+  position: sticky;
+  top:0;
+  cursor: pointer;
+
+      }
 /* Style for the main container */
 .main-container {
   display: flex; /* Use flexbox to arrange child divs side by side */
