@@ -253,7 +253,7 @@ nav a:hover{
   justify-content: space-between;
   align-items: center;
   background-color: #302f49;
-  padding: 40px 80px;
+  padding: 30px 60px;
 }
 
 .bottom-links {
@@ -262,6 +262,13 @@ nav a:hover{
   align-items: center;
   padding: 40px 0;
 }
+.bottom-links .logo{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+}
+
 
 .bottom-links .links {
   display: flex;
@@ -286,6 +293,6 @@ nav a:hover{
 .copy {
   color: #fff;
   position: relative;
-  background-color:#6E5E5E;
+  
 }
 
