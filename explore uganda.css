@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+/* Make it a marquee */
+
+body{
+  margin: 0;
+  padding: 0;
+  
+}
+.bg-img {
+ 
+  background-color: #253746;
+  height:100px;
+  min-height: 150px;
+  /* Needed to position the navbar */
+  position: relative;
+}
+nav{
+  width: 100%;
+  overflow: auto;
+}
+ul{
+  padding:0;
+  margin:0 0 0 150px;
+  list-style: none;
+}
+li{
+  float:left;
+}
+nav a{
+    width:70px;
+    display: flex;
+    padding:60px 10px;
+  
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: #D9D9D9;
+    text-align: center;
+    font-size: 12px;
+    justify-content: space-around;
+      }
+
+.logo img{
+  position: absolute;
+  border-radius: 50%;
+  /*margin-top: 15px;*/
+  /*margin-left: 10px;*/
+  width: 80px;
+  height: 80px;
+ padding: 15px;
+  display: inline;
+  left: 0;
+  margin: 5px 10px 10px 50px;
+}
+
+nav a:hover{
+  background: grey;
+  transition: 0.5;
+  text-transform: uppercase;
+}
+/* Style for the main container */
+.main-container {
+  display: flex; /* Use flexbox to arrange child divs side by side */
+  height: 1500px;
+  flex-direction: column; /* Stack child divs vertically */
+}
+
+/* Style for the left div */
+.up-div {
+  flex: 1; /* Allow the left div to grow to take available space */
+  padding: 20px; /* Adjust padding as needed */
+  background-color: #ccc; /* Set background color for the left div */
+  height: 550px;
+  background-color: #769ABE;
+  background-image: url('images/image.png'); /* Specify the path to your image */
+    background-size: cover; /* Cover the entire div */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    
+    
+}
+
+/* Style for the right div */
+.down-div {
+  flex: 1; /* Allow the right div to grow to take available space */
+  padding: 20px; /* Adjust padding as needed */
+  background-color: #253746; /* Set background color for the right div */
+  height: 950px;
+}
+
+.down-div h1{
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color: white;
+
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.Explore {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 80px;
+  float: left;
+  
+}
+.Explore .uganda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+.Explore .uganda img {
+ 
+  border-radius: 50%;
+  border: 2px;
+  padding: 10px;
+  height: 200px;
+  width: 200px;
+  transition: transform 3s ease-in-out;
+  justify-content: space-between;
+  align-items: center; 
+            display: flex; 
+            flex-direction: row; 
+}
+.Explore .uganda p {
+  color:white;
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  z-index: 100;
+}
+.Explore .image img {
+ 
+  border-radius: 10%;
+  border: 2px;
+  padding: 10px;
+  height: 200px;
+  width: 350px;
+  transition: transform 3s ease-in-out;
+  justify-content: space-between;
+  align-items: center; 
+            display: flex; 
+            flex-direction: row; 
+}
+.Explore .image p {
+  color:white;
+  font-size: 24px;
+  font-weight:bold;
+  position: absolute;
+  }
+.next-line {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 80px;
+  float: left;
+}
+.next-line .image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+.next-line .image img {
+ 
+  border-radius: 10%;
+  border: 2px;
+  padding: 10px;
+  height: 200px;
+  width: 350px;
+  transition: transform 3s ease-in-out;
+  justify-content: space-between;
+  align-items: center; 
+            display: flex; 
+            flex-direction: row; 
+}
+
+.next-line.image p{
+  color: white;
+}
+   
+    
+    
+  /* CSS for footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #302f49;
+  padding: 40px 80px;
+}
+
+.bottom-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.bottom-links .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.bottom-links .links span {
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.bottom-links .links a {
+  text-decoration: none;
+  color: #a1a1a1;
+  padding: 10px 20px;
+}
+.copy {
+  color: #fff;
+  position: relative;
+  background-color:#6E5E5E;
+}
+
