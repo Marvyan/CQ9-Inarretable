@@ -7,7 +7,7 @@
 </head>
 <link rel="stylesheet" href="Home.css">
 <script src="https://kit.fontawesome.com/ea7a1ae3d9.js" crossorigin="anonymous"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <body>
 <!-----first section----->
 
@@ -25,14 +25,14 @@
       <li><a href="Events & Venues.html" >EVENTS & VENUES</a></li>
       <li><a href="Support.html">SUPPORT</a></li>
       <li><a href="Contact us.html">CONTACT US</a></li>
-      <li><a href="sign-up-form.html">SIGN UP</a></li>
-      <li><a href="login form.html">SIGN IN</a></li>
+      <li><a href="signup.html">SIGN UP</a></li>
+      <li><a  href="login.html">SIGN IN</a></li>
       <input type="text" placeholder="Search..">
       </ul>
     </nav>
      
 </div>
-   
+   <main>
 <div class="space">
   <div class="image">
     <img src="images/gorilla.png" alt="gorilla">
@@ -46,47 +46,44 @@
   
 </div>
 
- 
-<div class="main-container">
-  <div class="up-div">
-      <!-- Content for the left div -->
-  </div>
-  <div class="down-div">
-      <h1>Vist and Explore Uganda the Pearl of Africa</h1>
-      <div class="Explore">
-        <div class="uganda">
-            <img src="images/gorilla.png" alt="gorilla">
-            <p id="text">
-              National Parks
-          </div>
-        <div class="uganda">
-            <img src="images/museum.png" alt="museum">
-            <p id="text">
-              Museum
-        </div>
-        <div class="image">
-            <img src="images/cultural.png" alt="cultural">
-            <p id="text">
-              Culture Experience
-          </div>
-      </div>
-      <div class="next-line">
-        <div class="image">
-          <img src="images/waterfall.png" alt="waterfall">
+  <div class="custom" id="up-div">
+    <h1>Vist and Explore Uganda the Pearl of Africa</h1>
+    <div class="Explore">
+      <div class="uganda">
+        <h3>Conferences and meetings</h3>
+          <img src="images/meetings.png" alt="meetings">
           <p id="text">
-          Waterfall
+            We have the capability to provide you access to the most comfortable conference and meeting venues
         </div>
-        <div class="image">
-        <img src="images/mountain climbing.png" alt="mountain">
-        <p id="text">
-          Mountain Climbing
+        <div class="uganda">
+          <h3>Incentive Trips</h3>
+            <img src="images/incentive trips.png" alt="incentive">
+            <p id="text">
+              VARIOUS VENUES FOR YOUR ULTIMATE TEAM GETAWAY-Motivation Meets Adventure: Incentive Trips that Drive Success
         </div>
-      </div>
-          
-</div>
+        <div class="uganda">
+          <h3>EXHIBITION</h3>
+          <img src="images/exhibition.png" alt="exhibition">
+          <p id="text">
+            Elevate your events with our MICE expertise, turning exhibitions into extraordinary experiences
+        </div>
+        <div class="uganda">
+          <h3>LIFE OF THE PARTY</h3>
+          <img src="images/life of the party.png" alt="life of the party">
+          <p id="text">
+            Life of the party, powered by TURWA MICE: Where every event becomes an unforgettable celebration."
 
-    
-        <!-----footer-->
+        </div>
+    </div>
+  </div>
+
+  <div class="custom" id="statistics">
+
+  </div>
+</main>
+
+
+ <!-----footer-->
         <footer class="footer">
 
           <div class="bottom-links">
@@ -114,7 +111,8 @@
 
             <div class="links">
                 <span>Contact Us</span>
-                &#9990; <a href="https://api.whatsapp.com/send?phone=1999999999">+1 999 999 999</a>
+                <p><i class="fas fa-envelope"></i> john.doe@example.com</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
 
             
                 <span>Follow us</span>
@@ -126,8 +124,7 @@
            
           </footer>
     
-         
-          
+                  
 </body>
 
 

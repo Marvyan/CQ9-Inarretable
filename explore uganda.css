@@ -120,6 +120,7 @@ nav a:hover{
   flex-direction: column; /* Stack child divs vertically */
 }
 
+
 /* Style for the left div */
 .up-div {
   flex: 1; /* Allow the left div to grow to take available space */
@@ -128,9 +129,6 @@ nav a:hover{
   height: 550px;
   background-color: #769ABE;
   background-image: url('images/image.png'); /* Specify the path to your image */
-    background-size: cover; /* Cover the entire div */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent image repetition */
     
     
 }
