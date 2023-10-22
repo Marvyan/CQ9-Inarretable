@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+body{
+  margin:0;
+  padding: 0;
+}
+
+.bg{
+ 
+  background-color: #253746;
+  height:100px;
+  min-height: 150px;
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+  .main-container {
+    display: flex; 
+    height: 1500px;
+    flex-direction: column; 
+  }
+  
+  /* Style for the left div */
+
+
+.navbar{
+  width: 100%;
+  overflow: auto;
+  
+}
+.navbar ul{
+  
+  padding:0;
+  margin:0 0 0 150px;
+  list-style: none;
+  
+  padding: 2px;
+  
+}
+.navbar li{
+  float:left;
+  margin: 0.5px;
+ 
+}
+.navbar a{
+  width:100px;
+  display: flex;
+  padding:40px 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  display:flex;
+  justify-content: center;
+  position: sticky;
+  font-weight: bold;
+  text-decoration: none;
+  top:0;
+  cursor: pointer;
+
+      }
+
+.logo img{
+  
+  position: absolute;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  padding: 15px;
+  display: inline;
+  left: 0;
+  margin: 5px 10px 10px 50px;
+}
+
+nav a:hover{
+  background: grey;
+  transition: 0.5;
+  text-transform: uppercase;
+}
+
+
+
+li{
+  float: left;
+  color: white;
+}
+
+li a{
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.golden{
+  margin: 3%;
+  position: relative;
+  background-image: 1000%;
+}
+
+.text-container{
+  position: absolute;
+  color: rgb(255, 255,255);
+  left: 10rem;
+  top: 2rem;
+  background-color: rgb(41, 41, 41);
+  padding: 0 1rem;
+}
+
+.conference h3{
+ text-align: center;
+ 
+}
+.conference {
+  flex: 1; /* Allow the right div to grow to take available space */
+  padding: 20px; /* Adjust padding as needed */
+  background-color: rgb(26, 131, 173); /* Set background color for the right div */
+ height: 700px;
+}
+
+.conference h1{
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+/* CSS for footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #253746;
+  padding: 30px 60px;
+}
+
+.bottom-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0;
+  border:5px;
+  width: 2000px;
+  
+}
+.bottom-links .image img{
+ 
+  width: 80px;
+  height: 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  }
+  .bottom-links .image p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    }
+
+
+.bottom-links .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.bottom-links .links span {
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bottom-links .links a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline;
+}
+.copy {
+  color: #fff;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+
+ 
+

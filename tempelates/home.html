@@ -1,0 +1,287 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<link rel="stylesheet" href="Home.css">
+<script src="https://kit.fontawesome.com/ea7a1ae3d9.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<body>
+<!-----first section----->
+<video autoplay muted loop id="background-video">
+  <source src="videos/serena-hotel-kampala-uganda_PsTQGH6i.mp4" type="video/mp4">
+      </video>
+
+  <div class="bg">
+    <div class="logo"><img src="images/logo.png"></div>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="Home.html">HOME</a></li>
+        <li><a href="About us.html">ABOUT US</a></li>
+        <li><a href="explore Uganda.html">EXPLORE UG</a></li>
+        <li><a href="Events & Venues.html" >EVENTS & VENUES</a></li>
+        <li><a href="Support.html">SUPPORT</a></li>
+        <li><a href="Contact us.html">CONTACT US</a></li>
+        <li><button id="openSignup">SIGNUP </button></li>
+        <li><button id="showLogin">LOGIN</button></li>
+        <li><input type="text" placeholder="Search.."></li>
+      </ul>
+    </nav>
+
+    <h1>TURWA</h1>
+    <p>Turwa online Plateform is here to connect <br><br>
+      you with the most afforable venue having all your MICE needs in one place</p>
+     
+</div>
+   <main>
+<div class="space">
+  <div class="image">
+    <img src="images/gorilla.png" alt="gorilla">
+  </div>
+  <div class="text">
+    <h1>
+      Info Title about Turwa
+    </h1>
+    <p>hshhh sajjasjjsa ijsojwqosj ojosjoj sjjsaoio ijasjijjojso joijsjhhwqut ihiu jiuwygy<BR>
+    uhuhdhduds ijoijidijsijojewdhnuiew87nn hedhiuh yi8hisy8 hiuhihoiuou hiujdoi<br>
+  gsjaguhuihh</p>
+  </div>
+  
+</div>
+
+  <div class="custom" id="up-div">
+    <h1>TURWA VENUES AND DESTINATIONS</h1>
+    <div class="Explore">
+      <div class="uganda">
+        <h3>CONFERENCES AND MEETINGS</h3>
+          <img src="images/meetings.png" alt="meetings">
+          <p id="text">
+            We have the capability to provide you access to the most comfortable conference and meeting venues
+        </div>
+        <div class="uganda">
+          <h3>INCENTIVES TRIPS</h3>
+            <img src="images/incentive trips.png" alt="incentive">
+            <p id="text">
+              VARIOUS VENUES FOR YOUR ULTIMATE TEAM GETAWAY-Motivation Meets Adventure: Incentive Trips that Drive Success
+        </div>
+        <div class="uganda">
+          <h3>EXHIBITION</h3>
+          <img src="images/exhibition.png" alt="exhibition">
+          <p id="text">
+            Elevate your events with our MICE expertise, turning exhibitions into extraordinary experiences
+        </div>
+        <div class="uganda">
+          <h3>LIFE OF THE PARTY</h3>
+          <img src="images/life of the party.png" alt="life of the party">
+          <p id="text">
+            Life of the party, powered by TURWA MICE: Where every event becomes an unforgettable celebration."
+
+        </div>
+    </div>
+  </div>
+<div class="type" id="Destinations">
+  <h1>TURWA DESTINATIONS</h1>
+  <div class="travel">
+    <div class="uganda">
+      <img src="images/sheraton.png" alt="sheraton">
+          <p id="text">Sheraton Hotel
+    </div>
+    <div class="uganda">
+      <img src="images/queen elizabeth.png" alt="queen elizabeth">
+      <p id="text">Queen elizabeth
+    </div>
+    <div class="uganda">
+      <img src="images/Source of the Nile.png" alt="Source of the Nile">
+          <p id="text">Source Of the Nile
+    </div>
+  </div>
+
+  </div>
+</main>
+
+
+ <!-----footer-->
+        <footer class="footer">
+
+          <div class="bottom-links">
+            
+            <div class="image">
+              <img src="images/logo.png" alt="logo">
+              <p id="text">
+                Turwa. Dynamic platform for bridging event planners with diverse venues and empowering venue owners to showcase their spaces for unforgettable events.<br><br>
+
+                Where Events Find Their Perfect Place
+                <div class="copy">&copy; 2023 Inarretable</div>
+            </div>
+            </div>
+
+
+                      
+            <div class="bottom-links">
+              <div class="links">
+                <span>Resources</span>
+                <a href="Resources.html"> Resources</a>
+                <a href="Terms & Conditions.html">Terms & Conditions</a>
+                <a href="Privacy Policy.html">Privacy Policy</a>
+                <a href="Feedback.html" >Feedback</a>  
+              </div>
+
+            <div class="links">
+                <span>Contact Us</span>
+                <p><i class="fas fa-envelope"></i> john.doe@example.com</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+
+            
+                <span>Follow us</span>
+                <i class="fab fa-facebook"></i>               
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+           
+          </footer>
+
+
+<!----login popup-->
+
+<div id="loginForm" class="modal">
+  <div class="modal-content">
+      <span class="close" id="closeLogin">&times;</span>
+      <h2>Login</h2>
+      <form>
+          <div class="inputBox"> 
+            <label for="email">E-Mail Address</label>
+              <input type="text" required> <i>Email</i> 
+            </div> 
+            <div class="inputBox"> 
+              <label for="password">Password</label>
+              <input type="password" required> <i>Password</i> 
+            </div> 
+
+            <div class="links"> <a href="#">Forgot Password</a> <a href="signup.html">Signup</a> 
+            </div> 
+            <div class="inputBox"> 
+              <input type="submit" value="Login"> 
+            </div>
+      </form>      
+  </div>
+</div>
+
+<!---sign up popup-->
+
+<div id="Signup" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeSignup">&times;</span>
+    <h2>Sign UP</h2>
+    <form>
+      <div class="inputBox">
+        <label for="userName">UserName</label>
+        <input type="text" required> <i>UserName</i>
+      </div>
+      <div class="inputBox">
+        <label for="email">E-Mail Address</label>
+        <input type="text" required> <i>Email</i>
+      </div>
+      <div class="inputBox">
+        <label for="password">Password</label>
+        <input type="password" required> <i>Password</i>
+      </div>
+      <div class="inputBox"> 
+        <label for="retypepassword">Re-type Password</label>
+        <input type="retypepassword" required> <i>Re-type Password</i> 
+      </div> 
+      <div class="links">
+        <a href="#">Forgot Password</a>
+      </div>
+      <div class="inputBox">
+        <input type="submit" value="Signup">
+      </div>
+    </form>
+  </div>
+</div>
+
+<!----------script for siguup-->
+<script>
+// Get the modal and button elements
+const Signup = document.getElementById("Signup");
+const openSignupButton = document.getElementById("openSignup");
+const closeSignupButton = document.getElementById("closeSignup");
+
+// Show the Signup form when the button is clicked
+openSignupButton.onclick = function() {
+  Signup.style.display = "block";
+}
+
+// Close the Signup form when the "X" is clicked
+closeSignupButton.onclick = function() {
+  Signup.style.display = "none";
+}
+
+// Close the Signup form if the overlay is clicked
+window.onclick = function(event) {
+  if (event.target === Signup) {
+    Signup.style.display = "none";
+  }
+}
+
+</script>
+
+
+
+<!----------script for login-->
+<script>// Get the modal and button elements
+  const loginForm = document.getElementById("loginForm");
+  const showLoginButton = document.getElementById("showLogin");
+  const closeLoginButton = document.getElementById("closeLogin");
+  
+  // Show the login form when the button is clicked
+  showLoginButton.onclick = function() {
+      loginForm.style.display = "block";
+  }
+  
+  // Close the login form when the "X" is clicked
+  closeLoginButton.onclick = function() {
+      loginForm.style.display = "none";
+  }
+  
+  // Close the login form if the overlay is clicked
+  window.onclick = function(event) {
+      if (event.target === loginForm) {
+          loginForm.style.display = "none";
+      }
+  }
+  </script>
+
+<script>
+  window.addEventListener("load", function() {
+      const upDiv = document.getElementById("up-div");
+      upDiv.style.display = "block";
+  });
+</script>
+
+<!-----------script for destination-->
+
+<script>
+  const destinationsContainer = document.getElementById('Destinations');
+  let isRight = true;
+  
+  function toggleDirection() {
+    if (isRight) {
+      destinationsContainer.style.right = '0';
+    } else {
+      destinationsContainer.style.right = '-100%';
+    }
+    isRight = !isRight;
+  }
+  </script>
+</body>
+</html>
+
+    
+                  
+</body>
+
+
+</html>
