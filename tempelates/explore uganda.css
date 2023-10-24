@@ -6,7 +6,7 @@ body{
 }
 .bg{
  
-  background-color: #253746;
+  background-image: url('images/nature2.jpg');;
   height:100px;
   min-height: 150px;
   /* Needed to position the navbar */
@@ -112,10 +112,10 @@ nav a:hover{
   display: flex;
   padding:4px 5px;
   font-family: Arial, Helvetica, sans-serif;
-  color: black;
+  color: white;
   text-align: center;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 14px;
   display:flex;
   justify-content: center;
   position: sticky;
@@ -130,15 +130,21 @@ nav a:hover{
   flex-direction: column; /* Stack child divs vertically */
 }
 
+.input-container input{
+  margin-top: 32px;
+  border-radius: 0.5rem;
+  padding: 5px;
+}
+
 
 /* Style for the left div */
 .up-div {
   flex: 1; /* Allow the left div to grow to take available space */
   padding: 20px; /* Adjust padding as needed */
   background-color: #ccc; /* Set background color for the left div */
-  height: 550px;
+  height: 800px;
   background-color: #769ABE;
-  background-image: url('images/image.png'); /* Specify the path to your image */
+  background-image: url('images/nature2.jpg'); /* Specify the path to your image */
   background-size: cover;
     
     
@@ -349,4 +355,48 @@ button:hover{
   background-color:#fff;
   border-radius:5px;
   box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+
+
+
+/* code for the dropdown languages */
+
+.dropbtn {
+  /* background-color: #4CAF50; */
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: gray;
 }

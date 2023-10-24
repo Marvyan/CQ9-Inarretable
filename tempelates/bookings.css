@@ -1,0 +1,66 @@
+/* Apply styles to the page container */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    padding: 20px 0;
+  }
+  
+  /* Style the form container */
+  #booking-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  /* Style form labels and inputs */
+  #booking-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  #booking-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Style the button */
+  #create-booking {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #create-booking:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style the output message */
+  #output {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+ 
+    
+  

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Booking</title>
+    <link
+  href="css/mdb.min.css"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" type="text/css" href="bookings.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarExample01"
+            aria-controls="navbarExample01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarExample01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="create-booking.html">CreateBookings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="create-user.html">Sign up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="create-event.html">Create Event</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <h2>Create Booking</h2>
+    <form id="booking-form">
+        <label for="userId">User ID:</label>
+        <input type="text" id="userId" name="userId" required><br>
+
+        <label for="eventId">Event ID:</label>
+        <input type="text" id="eventId" name="eventId" required><br>
+
+        <button type="button" id="create-booking" class="btn btn-success">Create Booking</button>
+    </form>
+    
+    <div id="output"></div>
+
+    <script>
+        const createBookingBtn = document.getElementById('create-booking');
+        const output = document.getElementById('output');
+        createBookingBtn.addEventListener('click', createBooking);
+
+        function createBooking() {
+            const userId = document.getElementById('userId').value;
+            const eventId = document.getElementById('eventId').value;
+
+            // Send a request to your server to create a booking
+            // You can use fetch or XMLHttpRequest for this
+            // Example: fetch('/createBooking', { method: 'POST', body: JSON.stringify({ userId, eventId }) })
+            
+            // Display the result in the output
+            output.textContent = `Booking created: User ID - ${userId}, Event ID - ${eventId}`;
+        }
+    </script>
+    <!-- Include the same JavaScript code from index.html here -->
+    <script
+type="text/javascript"
+src="js/mdb.min.js"
+></script>
+</body>
+</html>

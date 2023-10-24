@@ -1,0 +1,81 @@
+/* Navigation Menu Styles */
+nav {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+/* Additional styles specific to individual pages can be added here */
+
+/* Sign-Up Page Styles */
+#signupForm {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Login Page Styles */
+#loginForm {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Bookings Page Styles */
+.event {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    max-width: 400px;
+    text-align: left;
+}
+
+.book-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#message {
+    text-align: center;
+}

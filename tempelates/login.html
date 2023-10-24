@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <!-- Copy the navigation menu from create-user.html here -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarExample01"
+        aria-controls="navbarExample01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarExample01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="create-booking.html">CreateBookings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="create-user.html">Sign up</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="create-event.html">Create Event</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <h1>Login</h1>
+
+    <form id="login-form" class="mb-3">
+        <label for="username" class="form-label">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="password" class="form-label">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <button type="button" id="login" class="btn btn-primary">Login</button>
+    </form>
+
+    <a id="logout-link" href="logout.html" style="display: none;">Logout</a>
+
+    <!-- Include the JavaScript code for login here -->
+    <script>
+        // Get references to HTML elements
+        const loginForm = document.getElementById('login-form');
+        const usernameInput = document.getElementById('username');
+        const passwordInput = document.getElementById('password');
+        const loginButton = document.getElementById('login');
+        const logoutLink = document.getElementById('logout-link');
+    
+        // Add an event listener to the login button
+        loginButton.addEventListener('click', () => {
+            const username = usernameInput.value;
+            const password = passwordInput.value;
+    
+            // Replace this with your actual login API endpoint
+            const loginEndpoint = '/api/login';
+    
+            // Make a POST request to your server for user authentication
+            fetch(loginEndpoint, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ username, password }),
+            })
+                .then((response) => {
+                    if (response.ok) {
+                        // Hide the login form
+                        loginForm.style.display = 'none';
+                        
+                        // Show the logout link
+                        logoutLink.style.display = 'block';
+    
+                        // Redirect to the dashboard or another page on successful login
+                        window.location.href = 'index.html';
+                    } else {
+                        console.error('Login failed');
+                    }
+                })
+                .catch((error) => {
+                    console.error('An error occurred during login:', error);
+                });
+        });
+    </script>
+    
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+</html>

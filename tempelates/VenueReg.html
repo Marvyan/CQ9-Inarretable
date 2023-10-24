@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Venue Registration</title>
+    <link rel="stylesheet" type="text/css" href="VenueReg.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Venue Registration</h2>
+        <p>Welcome to Turwa Venue Registration Page. Please provide the details of your venue below. We're excited to have your venues listed!</p>
+        <form id="venue-registration-form">
+            <div class="venue">
+                <label for="venue-name">Venue Name:</label>
+                <input type="text" id="venue-name" name="venue-name" required>
+                <label for="venue-type">Venue Type:</label>
+                <select id="venue-type" name="venue-type" required>
+                    <option value="Meeting">Meeting</option>
+                    <option value="Conference">Conference</option>
+                    <option value="Incentive">Incentive</option>
+                    <option value="Exhibitions">Exhibitions</option>
+                    <option value="Weddings">Weddings</option>
+                </select>
+                <label for="venue-description">Description:</label>
+                <textarea id="venue-description" name="venue-description" required></textarea>
+
+                <label for="venue-capacity">Capacity:</label>
+                <input type="number" id="venue-capacity" name="venue-capacity" required>
+
+                <label for="venue-price">Price:</label>
+                <input type="number" id="venue-price" name="venue-price" required>
+
+                <label for="currency">Currency:</label>
+                <select id="currency" name="currency" required>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="UGX">UGX</option>
+                </select>
+
+                <label for="location">Location:</label>
+                <select id="location" name="location" required>
+                    <option value="Kampala">Kampala</option>
+                    <option value="Entebbe">Entebbe</option>
+                    <option value="Mbarara">Mbarara</option>
+                    <!-- Add more Ugandan districts here -->
+                </select>
+
+                <label for="venue-images">Venue Images:</label>
+                <input type="file" id="venue-images" name="venue-images" accept="image/*" multiple>
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <div class="confirmation" id="confirmation" style="display: none;">
+            <p>Thank you for your venue registration! Your submission has been received.</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("venue-registration-form");
+            form.addEventListener("submit", async function (event) {
+                event.preventDefault();
+
+                const formData = new FormData(form);
+                const response = await fetch("YOUR_BACKEND_API_URL", {
+                    method: "POST",
+                    body: formData,
+                });
+
+                if (response.ok) {
+                    const confirmation = document.getElementById("confirmation");
+                    confirmation.style.display = "block";
+                } else {
+                    console.error("Venue registration failed.");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create User</title>
+    <link
+  href="css/mdb.min.css"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" type="text/css" href="createuser.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarExample01"
+            aria-controls="navbarExample01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarExample01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="create-booking.html">CreateBookings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="create-user.html">Sign up</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="login.html">Login</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="create-event.html">Create Event</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <h1>Create User</h1>
+    
+    <form id="user-form" class="mb-3">
+        <label for="username exampleInputEmail1" class="form-label">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <button type="button" id="create-user" class="btn btn-success">Create User</button>
+    </form>
+    <div id="output"></div>
+    <!-- Include the same JavaScript code from index.html here -->
+    <script>
+        const createUserBtn = document.getElementById('create-user');
+        const output = document.getElementById('output');
+        createUserBtn.addEventListener('click', createUser);
+
+        function createUser() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const email = document.getElementById('email').value;
+
+            // Send a request to your server to create a user
+            // You can use fetch or XMLHttpRequest for this
+            // Example: fetch('/createUser', { method: 'POST', body: JSON.stringify({ username, password, email }) })
+            
+            // Display the result in the output
+            output.textContent = `User created: Username - ${username}, Email - ${email}`;
+        }
+
+
+    </script>
+    <script
+    type="text/javascript"
+    src="js/mdb.min.js"
+    ></script>
+</body>
+</html>
